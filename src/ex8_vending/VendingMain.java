@@ -24,7 +24,9 @@ public class VendingMain {
 		Scanner sc = new Scanner(System.in); 
 		
 		Vending ven = new Vending();
-		ven.init();      // 음료 목록 초기화 클래스 실행
+		//ven.init();      // 음료 목록 초기화 클래스 실행
+		
+		
 		
 		System.out.println("insert coin : ");
 		int money = sc.nextInt();     // 사용자 금액 입력

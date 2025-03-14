@@ -7,6 +7,13 @@ public class Can {
 	private String name;
 	private int price;
 	
+	public Can( String name, int price ) {
+		this.name = name;
+		this.price = price;
+
+	} // ex8_vending 클래스
+	
+	
 	public String getName() {
 		return name;
 	} // 새롭게 저장된 이름 출력, 불러오기

@@ -7,12 +7,25 @@ public class Vending {
 	private int money;  // private로 선언했지만, 세터를 이용해 값을 바꿀 수 있다.
 	
 	
+	public Vending() {
+		
+		// 새로운 방식
+		
+		cans[0] = new Can( "fanta", 1000 );
+		cans[1] = new Can( "cider", 1100 );
+		cans[2] = new Can( "orange", 1200 );
+		cans[3] = new Can( "banana", 1300 );
+		cans[4] = new Can( "coke", 1400 );
+		
+	} // Vending() 생성자 
+	
 	
 	// 음료 목록 초기화
+	/*
 	public void init() {
 		
-		for(int i = 0; i < cans.length; i++) {
-			cans[i] = new Can();   // index별 음료수 이름을 저장할 공간 생성
+		/* for(int i = 0; i < cans.length; i++) {
+			cans[i] = new Can(  );   // index별 음료수 이름을 저장할 공간 생성
 		} // for
 		
 		cans[0].setName("fanta");
@@ -28,10 +41,10 @@ public class Vending {
 		cans[3].setPrice(1300);
 		
 		cans[4].setName("coke");
-		cans[4].setPrice(1400);  // 배열에 음료수들의 이름과 가격 저장.
+		cans[4].setPrice(1400);  // 배열에 음료수들의 이름과 가격 저장.  */
 		
 		
-	} // init()
+	// } // init() 
 	
 	
 	
